@@ -1,0 +1,297 @@
+@charset "UTF-8";
+// 日本語
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: .5px;
+}
+
+main {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+header {
+    height: 74px;
+    background: #1b1310;
+    border-bottom: 2px solid white ;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+
+
+        h1 {
+            position: absolute;
+            top: 26px;
+            left: 27px;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                font-size: 26px;
+                font-weight: normal;
+            }
+        }
+
+        nav {
+            position: absolute;
+            top: 29px;
+            right: 0;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        padding: 20px 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#top {
+height: 740px;
+background: gray url(../img/fv-bgi@2x.jpg);
+margin-bottom: 100px;
+position: relative;
+
+    p {
+        display: inline-block;
+        color: white;
+        border: 2px solid white;
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        padding: 30px 48px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+#about {
+    margin-bottom: 152px;
+}
+
+#service {
+    margin-bottom: 152px;
+
+    .box-service {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 50px;
+
+        img {
+            width: calc(50% - 35px);
+        }
+        .box-text {
+            width: calc(50% - 35px);
+        }
+    }
+
+    .box-service:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+}
+
+#news {
+    margin-bottom: 152px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .card-news {
+            width: calc(33% - 20px);
+            box-shadow: 0 0 8px grey;;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                padding: 30px;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+
+#contact {
+    margin-bottom: 50px;
+
+    form {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+
+        .form-part {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+
+
+        }
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+    input,textarea {
+        border: 1px solid #141414;
+        padding: 10px;
+    }
+
+    #input-subject,textarea{
+        line-height: 2;
+        font-size:16px;
+    }
+
+    textarea{
+    resize: none;
+    height: 171px;
+    }
+
+    .form-send{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .form-btn{
+        display: inline-block;
+        width: 235px;
+
+        padding: 10px 30px;
+        border-radius: 30px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        background-color: #1B1310;
+        box-shadow: 0px 0px 6px #1B1310;
+    }
+}
+
+footer {
+    height: 80px;
+    background: #1b1310;
+
+    p {
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        line-height: 80px;
+        font-weight: 300;
+        letter-spacing: .7px;
+    }
+}
+
+@media (max-width:700px) {
+
+    nav {
+        display: none;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.5rem;
+    }
+
+    #top {
+        background: gray url(../img/fv-bgi_sp@2x.jpg);
+        background-size: cover;
+        height: 580px;
+
+        p {
+            width: 280px;
+            height: 90px;
+            padding: 8px 18px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 95px;
+        }
+     }
+
+     main {
+         padding: 0 15px;
+     }
+
+     #service {
+         .box-service {
+            flex-direction: column;
+            margin-bottom: 80px;
+
+            img {
+                width: 100%;
+                order: 3;
+            }
+            .box-text {
+                width: 100%;
+                order: 2;
+
+                margin-bottom: 30px;
+            }
+
+        }
+
+        .box-service:nth-child(3) {
+            flex-direction: column;
+        }
+    }
+
+    #news .container  {
+        flex-wrap: wrap;
+
+        .card-news {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    footer p {
+        font-size: 13px;
+        letter-spacing: .5px;
+    }
+
+
+
+}

@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: .5px;
+}
+
+main {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+header {
+  height: 74px;
+  background: #1b1310;
+  border-bottom: 2px solid white;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .container h1 {
+  position: absolute;
+  top: 26px;
+  left: 27px;
+}
+
+header .container h1 a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+header .container nav {
+  position: absolute;
+  top: 29px;
+  right: 0;
+}
+
+header .container nav ul li {
+  display: inline-block;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 27px;
+}
+
+#top {
+  height: 740px;
+  background: gray url(../img/fv-bgi@2x.jpg);
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#top p {
+  display: inline-block;
+  color: white;
+  border: 2px solid white;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  padding: 30px 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#about {
+  margin-bottom: 152px;
+}
+
+#service {
+  margin-bottom: 152px;
+}
+
+#service .box-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#service .box-service img {
+  width: calc(50% - 35px);
+}
+
+#service .box-service .box-text {
+  width: calc(50% - 35px);
+}
+
+#service .box-service:nth-child(3) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#news {
+  margin-bottom: 152px;
+}
+
+#news .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#news .container .card-news {
+  width: calc(33% - 20px);
+  -webkit-box-shadow: 0 0 8px grey;
+          box-shadow: 0 0 8px grey;
+}
+
+#news .container .card-news img {
+  width: 100%;
+}
+
+#news .container .card-news p {
+  padding: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+#contact {
+  margin-bottom: 50px;
+}
+
+#contact form {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact form .form-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+
+#contact label {
+  margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+  border: 1px solid #141414;
+  padding: 10px;
+}
+
+#contact #input-subject, #contact textarea {
+  line-height: 2;
+  font-size: 16px;
+}
+
+#contact textarea {
+  resize: none;
+  height: 171px;
+}
+
+#contact .form-send {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#contact .form-btn {
+  display: inline-block;
+  width: 235px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #1B1310;
+  -webkit-box-shadow: 0px 0px 6px #1B1310;
+          box-shadow: 0px 0px 6px #1B1310;
+}
+
+footer {
+  height: 80px;
+  background: #1b1310;
+}
+
+footer p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 80px;
+  font-weight: 300;
+  letter-spacing: .7px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  p {
+    font-size: 13px;
+    line-height: 1.5rem;
+  }
+  #top {
+    background: gray url(../img/fv-bgi_sp@2x.jpg);
+    background-size: cover;
+    height: 580px;
+  }
+  #top p {
+    width: 280px;
+    height: 90px;
+    padding: 8px 18px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 95px;
+  }
+  main {
+    padding: 0 15px;
+  }
+  #service .box-service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 80px;
+  }
+  #service .box-service img {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #service .box-service .box-text {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 30px;
+  }
+  #service .box-service:nth-child(3) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #news .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #news .container .card-news {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer p {
+    font-size: 13px;
+    letter-spacing: .5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
